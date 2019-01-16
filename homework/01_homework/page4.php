@@ -39,7 +39,92 @@
                 add some content! If you need some help hit up the
                 <a href="http://www.getskeleton.com">Skeleton documentation</a>.
             </p>
+            <table class="u-full-width">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Location</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Dave Gamache</td>
+                    <td>26</td>
+                    <td>Male</td>
+                    <td>San Francisco</td>
+                </tr>
+                <tr>
+                    <td>Dwayne Johnson</td>
+                    <td>42</td>
+                    <td>Male</td>
+                    <td>Hayward</td>
+                </tr>
+                </tbody>
+            </table>
+            <?php
 
+                $nums = array();
+                $nums = $_GET;
+            ?>
+            <p>10.Za primljena 4 ili više brojeva(num1, num2,num3...) brojevi se ispisuju u unordered listu</p>
+            <ul>
+                <?php foreach($nums as $num): ?>
+                    <li><?php echo $num; ?></li>
+                <?php endforeach; ?>
+            </ul>
+            <hr />
+            <?php
+
+            $x=12;
+            $y=2;
+
+            echo '$x = ' . $x . '<br>';
+            echo '$y = ' . $y . '<br>';
+
+            echo 'Vrijednosti $x i $y se vrćaju se na poćetnu vrijednost nakon svake operacije';
+
+            echo '<hr>';
+
+            echo '11.Izjednačavanje $x=$y, $x nakon izvođenja poprima vrijednost $y. $x= ' . $x=$y;
+
+
+            echo '<hr>';
+
+            $x=12;
+            $y=2;
+
+            echo '12.Dodavanje vrijednosti varijable $y varijabli $x: $x+=$y= ' . $x+=$y;
+
+            echo '<hr>';
+
+            $x=12;
+            $y=2;
+
+            echo '13.Oduzimanje vrijednosti varijable $y od vrijednosti varijable $x: $x-=$y= ' . $x-=$y;
+
+            echo '<hr>';
+
+            $x=12;
+            $y=2;
+
+            echo '14.Množenje vrijednosti varijable $x sa vrijednosti varijable $y: $x*=$y= ' . $x*=$y;
+
+            echo '<hr>';
+
+            $x=12;
+            $y=2;
+
+            echo '15.Dijeljenje vrijednosti varijable $x sa vrijednosti varijable $y: $x/=$y= ' . $x/=$y;
+
+            echo '<hr>';
+
+            $x=12;
+            $y=2;
+
+            echo '16.Ostatak dijeljenja $x i $y: $x%=$y= ' . $x%=$y;
+            ?>
         </div>
     </div>
 </div>
