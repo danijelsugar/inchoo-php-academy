@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation page</title>
-    <link rel="stylesheet" href="foundation/css/foundation.css">
+    <link rel="stylesheet" href="css/foundation.css">
 </head>
 <body>
 <div class="grid-container">
@@ -14,11 +14,11 @@
             <div class="top-bar">
                 <div class="top-bar-left">
                     <ul class="dropdown menu" data-dropdown-menu>
-                        <li><a href="index.php">1.stranica(Index)</a></li>
-                        <li><a href="page2.php">2.stranica</a></li>
+                        <li><a href="../index.php">1.stranica(Index)</a></li>
+                        <li><a href="../bootstrap-4.2.1-dist/page2.php">2.stranica</a></li>
                         <li><a href="page3.php">3.stranica</a></li>
-                        <li><a href="page4.php">4.stranica</a></li>
-                        <li><a href="page5.php">5.stranica</a></li>
+                        <li><a href="../skeleton/page4.php">4.stranica</a></li>
+                        <li><a href="../responsivegridsystem/page5.php">5.stranica</a></li>
                     </ul>
                 </div>
             </div>
@@ -76,8 +76,8 @@
 
 
 
-<script src="foundation/js/vendor/jquery.js"></script>
-<script src="foundation/js/vendor/what-input.js"></script>
-<script src="foundation/js/vendor/foundation.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
 </body>
 </html>

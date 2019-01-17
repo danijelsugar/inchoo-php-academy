@@ -11,10 +11,10 @@
             <nav>
                 <ul>
                     <li><a href="index.php">1.stranica(Index)</a></li>
-                    <li><a href="page2.php">2. stranica</a></li>
-                    <li><a href="page3.php">3. stranica</a></li>
-                    <li><a href="page4.php">4. stranica</a></li>
-                    <li><a href="page5.php">5. stranica</a></li>
+                    <li><a href="bootstrap-4.2.1-dist/page2.php">2. stranica</a></li>
+                    <li><a href="foundation/page3.php">3. stranica</a></li>
+                    <li><a href="skeleton/page4.php">4. stranica</a></li>
+                    <li><a href="responsivegridsystem/page5.php">5. stranica</a></li>
                 </ul>
             </nav>
             <main>

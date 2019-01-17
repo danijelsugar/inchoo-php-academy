@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="">
     <title>Bootstrap page</title>
-    <link rel="stylesheet" href="bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
@@ -12,19 +12,19 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">1. stranica(Index) <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.php">1. stranica(Index) <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="page2.php">2. stranica</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page3.php">3. stranica</a>
+                        <a class="nav-link" href="../foundation/page3.php">3. stranica</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page4.php">4. stranica</a>
+                        <a class="nav-link" href="../skeleton/page4.php">4. stranica</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page5.php">5. stranica</a>
+                        <a class="nav-link" href="../responsivegridsystem/page5.php">5. stranica</a>
                     </li>
                 </ul>
             </div>
@@ -66,6 +66,8 @@
                                 echo '$x = ' . $x . "<br />";
                                 echo '$y = ' . $y . "<br />";
                                 if($x==$y) {
+                                    echo '<hr />';
+                                    echo '$x==$y <br />';
                                     echo "<a class='card-link'>Brojevi su jednaki po vrijednosti ali ne i tipu podatka</a>";
                                 }
 
@@ -84,6 +86,8 @@
                                 echo '$g = ' . $g . "<br />";
 
                                 if($f===$g) {
+                                    echo '<hr />';
+                                    echo '$f===$g <br />';
                                 echo "<a class='card-link'>Brojevi su identični, jednaki po vrijednosti i
                                     tipu podatka</a>";
                                 }

@@ -27,19 +27,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="responsivegridsystem/css/html5reset.css" media="all">
-    <link rel="stylesheet" href="responsivegridsystem/css/col.css" media="all">
-    <link rel="stylesheet" href="responsivegridsystem/css/2cols.css" media="all">
-    <link rel="stylesheet" href="responsivegridsystem/css/3cols.css" media="all">
-    <link rel="stylesheet" href="responsivegridsystem/css/4cols.css" media="all">
-    <link rel="stylesheet" href="responsivegridsystem/css/5cols.css" media="all">
-    <link rel="stylesheet" href="responsivegridsystem/css/6cols.css" media="all">
-    <link rel="stylesheet" href="responsivegridsystem/css/7cols.css" media="all">
-    <link rel="stylesheet" href="responsivegridsystem/css/8cols.css" media="all">
-    <link rel="stylesheet" href="responsivegridsystem/css/9cols.css" media="all">
-    <link rel="stylesheet" href="responsivegridsystem/css/10cols.css" media="all">
-    <link rel="stylesheet" href="responsivegridsystem/css/11cols.css" media="all">
-    <link rel="stylesheet" href="responsivegridsystem/css/12cols.css" media="all">
+    <link rel="stylesheet" href="css/html5reset.css" media="all">
+    <link rel="stylesheet" href="css/col.css" media="all">
+    <link rel="stylesheet" href="css/2cols.css" media="all">
+    <link rel="stylesheet" href="css/3cols.css" media="all">
+    <link rel="stylesheet" href="css/4cols.css" media="all">
+    <link rel="stylesheet" href="css/5cols.css" media="all">
+    <link rel="stylesheet" href="css/6cols.css" media="all">
+    <link rel="stylesheet" href="css/7cols.css" media="all">
+    <link rel="stylesheet" href="css/8cols.css" media="all">
+    <link rel="stylesheet" href="css/9cols.css" media="all">
+    <link rel="stylesheet" href="css/10cols.css" media="all">
+    <link rel="stylesheet" href="css/11cols.css" media="all">
+    <link rel="stylesheet" href="css/12cols.css" media="all">
 
     <style type="text/css">
 
@@ -84,10 +84,10 @@
 
 <nav>
     <ul>
-        <li><a href="index.php">1. stranica(Index)</a></li>
-        <li><a href="page2.php">2. stranica</a></li>
-        <li><a href="page3.php">3. stranica</a></li>
-        <li><a href="page4.php">4. stranica</a></li>
+        <li><a href="../index.php">1. stranica(Index)</a></li>
+        <li><a href="../bootstrap-4.2.1-dist/page2.php">2. stranica</a></li>
+        <li><a href="../foundation/page3.php">3. stranica</a></li>
+        <li><a href="../skeleton/page4.php">4. stranica</a></li>
         <li><a href="page5.php">5. stranica</a></li>
     </ul>
 </nav>

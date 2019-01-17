@@ -19,8 +19,8 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="skeleton/css/normalize.css">
-    <link rel="stylesheet" href="skeleton/css/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -60,11 +60,11 @@
         <div class="twelve column">
             <nav>
                 <ul>
-                    <li><a href="index.php">1. stranica(Index)</a></li>
-                    <li><a href="page2.php">2. stranica</a></li>
-                    <li><a href="page3.php">3. stranica</a></li>
+                    <li><a href="../index.php">1. stranica(Index)</a></li>
+                    <li><a href="../bootstrap-4.2.1-dist/page2.php">2. stranica</a></li>
+                    <li><a href="../foundation/page3.php">3. stranica</a></li>
                     <li><a href="page4.php">4. stranica</a></li>
-                    <li><a href="page5.php">5. stranica</a></li>
+                    <li><a href="../responsivegridsystem/page5.php">5. stranica</a></li>
                 </ul>
             </nav>
         </div>
@@ -73,8 +73,7 @@
         <div class="twelve column">
             <h4>Basic Page</h4>
             <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to
-                add some content! If you need some help hit up the
-                <a href="http://www.getskeleton.com">Skeleton documentation</a>.
+                add some content.
             </p>
             <table class="u-full-width">
                 <thead>
