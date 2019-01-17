@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Third page</title>
+    <title>Foundation page</title>
     <link rel="stylesheet" href="foundation/css/foundation.css">
 </head>
 <body>
@@ -17,8 +17,8 @@
                         <li><a href="index.php">1.stranica(Index)</a></li>
                         <li><a href="page2.php">2.stranica</a></li>
                         <li><a href="page3.php">3.stranica</a></li>
-                        <li><a href="#">4.stranica</a></li>
-                        <li><a href="#">5.stranica</a></li>
+                        <li><a href="page4.php">4.stranica</a></li>
+                        <li><a href="page5.php">5.stranica</a></li>
                     </ul>
                 </div>
             </div>

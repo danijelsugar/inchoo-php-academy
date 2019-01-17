@@ -5,7 +5,7 @@
     <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>Your page title here :)</title>
+    <title>Skeleton page</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -25,6 +25,30 @@
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        nav ul {
+            display: flex;
+            justify-content: center;
+            background-color: #1bc71b;
+        }
+        nav ul li {
+            list-style: none;
+        }
+        nav ul li a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            background: #fff;
+            color: #1bc71b;
+        }
+        li {
+            margin-bottom: 0;
+        }
+    </style>
 
 </head>
 <body>
@@ -32,6 +56,19 @@
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container">
+    <div class="row">
+        <div class="twelve column">
+            <nav>
+                <ul>
+                    <li><a href="index.php">1. stranica(Index)</a></li>
+                    <li><a href="page2.php">2. stranica</a></li>
+                    <li><a href="page3.php">3. stranica</a></li>
+                    <li><a href="page4.php">4. stranica</a></li>
+                    <li><a href="page5.php">5. stranica</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     <div class="row">
         <div class="twelve column">
             <h4>Basic Page</h4>

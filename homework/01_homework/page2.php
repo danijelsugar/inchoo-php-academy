@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="">
-    <title>Second page</title>
+    <title>Bootstrap page</title>
     <link rel="stylesheet" href="bootstrap-4.2.1-dist/css/bootstrap.min.css">
 </head>
 <body>
@@ -21,10 +21,10 @@
                         <a class="nav-link" href="page3.php">3. stranica</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">4. stranica</a>
+                        <a class="nav-link" href="page4.php">4. stranica</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">5. stranica</a>
+                        <a class="nav-link" href="page5.php">5. stranica</a>
                     </li>
                 </ul>
             </div>
