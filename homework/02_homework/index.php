@@ -4,9 +4,19 @@
         $numbers = ($_POST['nums']);
         $separate = explode(',', $numbers);
 
-    }
+        foreach ($separate as $num) {
+            $num = preg_replace('/[^0-9]/', '', $num);
+            $isNumeric[] = $num;
+            $max = max($isNumeric);
+            $dimension = round(sqrt($max)+1);
+            if ($num % 2 === 0) {
+                $even[] = $num;
+            }
 
-    print_r($separate)
+        }
+    }
+    echo $dimension;
+    print_r($even);
 
 
 
@@ -21,11 +31,13 @@
     <title>Document</title>
 </head>
 <body>
-    <hr />
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <label for="nums">Enter your numbers</label><br>
         <input type="text" name="nums"><br>
         <input type="submit">
     </form>
+
+    <hr />
+
 </body>
 </html>
