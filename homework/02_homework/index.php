@@ -1,6 +1,14 @@
 <?php
 
-    print_r($_POST['nums']);
+    if(isset($_POST['nums'])) {
+        $numbers = ($_POST['nums']);
+        $separate = explode(',', $numbers);
+
+    }
+
+    print_r($separate)
+
+
 
 ?>
 <!doctype html>
