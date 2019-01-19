@@ -35,7 +35,8 @@
 
         }
     }
-    //echo $bold . '<br>';
+    //echo 'Bold: ' . $bold . '<br>';
+    //echo 'Dimension: ' . $dimension . '<br>';
     echo '<pre>';
     //print_r($even);
     echo '</pre>';
@@ -70,6 +71,32 @@
 
     <hr />
 
+<?php
+    $k=0;  // counter
+    if(isset($_POST['send'])) {
+        echo '<table style="width: 50%; margin: 0 auto;">';
+        for ($i = 1; $i <= $dimension; $i++) { //loops for rows
+            echo '<tr>';
+            for ($j = 1; $j <= $dimension; $j++) {  //loops for columns
+                ++$k;
+                if (!in_array($k, $even)) {
+                    echo '<td>' . ' ' . '</td>';
+                } else {
+                    if($k>$bold) {
+                        echo '<td><b>' . $k . '</b></td>';
+                    } else {
+                        echo '<td>' . $k . '</td>';
+                    }
+
+                }
+
+            }
+            echo '</tr>';
+        }
+        echo '</table>';
+    }
+
+?>
 
 
 </body>
