@@ -1,65 +1,44 @@
 <?php
 
-if(isset($_POST['send']) && isset($_POST['nums'])) { //if submit is pressed
-    $numbers = ($_POST['nums']); // puts nums send with POST in variable
+if(isset($_POST['send'])) { //if submit is pressed
+    $numbers = htmlspecialchars($_POST['nums']); // puts nums send with POST in variable
     $separate = explode(',', $numbers); // removes commas
 
     /*
      * loops through array and removes all non numeric characters,
      * */
     foreach ($separate as $num) {
-        $num = preg_replace('/[^0-9]/', '', $num);
-        $isNumeric[] = $num;
+        $num = preg_replace('/[^0-9.]/', '', $num); //removes all non numeric characters
+        $num = round($num); // if decimal number is entered rounds number
 
+        $isNumeric[] = $num;
         // checking if number is even and puts him in array
-        if (is_numeric($num) && $num % 2 === 0) {
+        if ($num != 0 && $num % 2 === 0) {
             $even[] = $num;
             sort($even);
         }
-
-
 
     }
 
     $max = max($isNumeric); // gets biggest number from array
     $bold = array_sum($isNumeric) / count($isNumeric); //arithmetic mean
 
-    /*
-     * not the best way but it works,
-     * when form is submit empty it still send empty string
-     * so this way it doesnt throw error in sqrt function,
-     * gets size of table
-     */
-    if($max === '') {
-        $dimension = 0;
-    } else {
-        $dimension = round(sqrt($max)+1);
-    }
-
+    $dimension = round(sqrt($max)+1); // size of table
     /*
      * gets closest even number of arithmetic mean
      * */
     $closest = null;
-    if(!empty($even)) {
-        foreach ($even as $greater) {
-            //echo $greater . '<br>';
-            if($greater>$bold){
-                $closest = $greater;
-                break;
-            }
-
+    foreach ($even as $greater) {
+        if($greater>$bold){
+            $closest = $greater;
+            break;
         }
+
     }
 
 
+
 }
-
-//echo $bold . '<br>';
-//echo $closest;
-echo '<pre>';
-//print_r($even);
-echo '</pre>';
-
 
 ?>
 <!doctype html>
@@ -85,7 +64,7 @@ echo '</pre>';
 <?php
 
 $k=0;  // counter
-if(isset($_POST['send'])) {
+if($_POST['nums'] != "" && count($even) > 0) { // if numbers were sent and at least on is even
     echo '<table style="width: 25%; margin: 0 auto;">';
     for ($i = 1; $i <= $dimension; $i++) { //loops for rows
         echo '<tr>';
@@ -109,7 +88,7 @@ if(isset($_POST['send'])) {
     echo '<div><p><a href="index.html">Go back</a></p>';
 
 } else {
-    echo '<p>No data has been sent yet, go <a href="index.html">back</a> to submit data</p>';
+    header('location: index.html');
 }
 
 ?>
