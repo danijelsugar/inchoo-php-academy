@@ -11,10 +11,10 @@
             $num = preg_replace('/[^0-9]/', '', $num);
             $isNumeric[] = $num;
 
-
             // checking if number is even and puts him in array
             if (is_numeric($num) && $num % 2 === 0) {
                 $even[] = $num;
+                sort($even);
             }
 
 
@@ -40,20 +40,25 @@
          * gets closest even number of arithmetic mean
          * */
         $closest = null;
-        foreach ($even as $greater) {
-            if($greater>$bold){
-                $closest = $greater;
-                break;
-            }
+        if(!empty($even)) {
+            foreach ($even as $greater) {
+                //echo $greater . '<br>';
+                if($greater>$bold){
+                    $closest = $greater;
+                    break;
+                }
 
+            }
         }
 
+
     }
-
-
-    //echo '<pre>';
+    
+    //echo $bold . '<br>';
+    //echo $closest;
+    echo '<pre>';
     //print_r($even);
-    //echo '</pre>';
+    echo '</pre>';
 
 
 ?>
@@ -109,6 +114,8 @@
             echo '</tr>';
         }
         echo '</table>';
+    } else {
+        echo '<p>No data has been sent yet</p>';
     }
 
 ?>
